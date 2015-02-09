@@ -1,0 +1,16 @@
+{
+  "name": "browserify-es6-types",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/browserify --debug -t flowcheck -t 6to5ify index.es6 -o bundle.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "^0.9.1"
+  },
+  "devDependencies": {
+    "6to5ify": "^4.1.0",
+    "browserify": "^8.1.3",
+    "flowcheck": "^0.2.3"
+  }
+}
